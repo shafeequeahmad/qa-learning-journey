@@ -1,0 +1,22 @@
+[
+  { "user": "alpha01", "password": "p@ssA1", "hostIP": "111.222.333.101" },
+  { "user": "beta02", "password": "p@ssB2", "hostIP": "111.222.333.102" },
+  { "user": "gamma03", "password": "p@ssC3", "hostIP": "111.222.333.103" },
+  { "user": "delta04", "password": "p@ssD4", "hostIP": "111.222.333.104" },
+  { "user": "epsilon05", "password": "p@ssE5", "hostIP": "111.222.333.105" },
+  { "user": "zeta06", "password": "p@ssF6", "hostIP": "111.222.333.106" },
+  { "user": "eta07", "password": "p@ssG7", "hostIP": "111.222.333.107" },
+  { "user": "theta08", "password": "p@ssH8", "hostIP": "111.222.333.108" },
+  { "user": "iota09", "password": "p@ssI9", "hostIP": "111.222.333.109" },
+  { "user": "kappa10", "password": "p@ssJ10", "hostIP": "111.222.333.110" },
+  { "user": "lambda11", "password": "p@ssK11", "hostIP": "111.222.333.111" },
+  { "user": "mu12", "password": "p@ssL12", "hostIP": "111.222.333.112" },
+  { "user": "nu13", "password": "p@ssM13", "hostIP": "111.222.333.113" },
+  { "user": "xi14", "password": "p@ssN14", "hostIP": "111.222.333.114" },
+  { "user": "omicron15", "password": "p@ssO15", "hostIP": "111.222.333.115" },
+  { "user": "pi16", "password": "p@ssP16", "hostIP": "111.222.333.116" },
+  { "user": "rho17", "password": "p@ssQ17", "hostIP": "111.222.333.117" },
+  { "user": "sigma18", "password": "p@ssR18", "hostIP": "111.222.333.118" },
+  { "user": "tau19", "password": "p@ssS19", "hostIP": "111.222.333.119" },
+  { "user": "omega20", "password": "p@ssT20", "hostIP": "111.222.333.120" }
+]
