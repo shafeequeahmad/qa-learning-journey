@@ -2,7 +2,7 @@ import pytest
 import requests
 from .const import pages
 
-@pytest.mark.usefixtures('base_url')
+@pytest.mark.usefixtures('baseurl')
 class Base:
     pass
 

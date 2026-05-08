@@ -4,6 +4,9 @@ import pytest
 
 @pytest.mark.codegen
 def test_example(page: Page) -> None:
+    '''This test case demonstrates the use of code generation in Playwright.
+    It navigates to the Playwright website, checks for the presence of certain elements,'''
+    
     page.goto("https://playwright.dev/")
     expect(page.get_by_role("heading", name="Playwright enables reliable")).to_be_visible()
     expect(page.get_by_role("link", name="Get started")).to_be_visible()

@@ -1,9 +1,9 @@
 '''
-To generage code with codegen u need to trigger ' playwright codegen "https://playwright.dev/"' 
-on CLI/terminal. This will open a browser and start recording your actions on the website. 
-You can then perform various actions like clicking links, filling forms, etc. 
+To generage code with codegen u need to trigger ' playwright codegen "https://playwright.dev/"'
+on CLI/terminal. This will open a browser and start recording your actions on the website.
+You can then perform various actions like clicking links, filling forms, etc.
 The codegen tool will generate the corresponding code for those actions in real-time.
-Once you are done, you can stop the recording and save the generated code to a file. 
+Once you are done, you can stop the recording and save the generated code to a file.
 This code can then be used as a test script for automating browser interactions using Playwright.
 '''
 import re
@@ -18,12 +18,18 @@ class BaseTest():
 class TestExample(BaseTest):
 
     def test_has_title(self, page: Page):
+        '''This test case demonstrates the use of browser navigation methods in Playwright.
+        It navigates to the specified URL, clicks on the "Forgot your password?" link,'''
+
         page.goto(self.url)
 
         # Expect a title "to contain" a substring.
         expect(page).to_have_title(re.compile("Playwright"))
 
     def test_get_started_link(self, page: Page):
+        '''This test case demonstrates the use of code generation in Playwright.
+        It navigates to the Playwright website, checks for the presence of certain elements,'''
+
         page.goto(self.url)
 
         # Click the get started link.

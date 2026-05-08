@@ -11,10 +11,19 @@ class BaseTest():
 
 @pytest.mark.locator
 class TestExample(BaseTest):
+    '''This test case demonstrates the use of locators in Playwright.
+    It navigates to the specified URL, locates various elements on the page using both relative CSS 
+    and relative XPath locators, and performs actions such as filling in the username and password fields 
+    and clicking the login button.'''
+    
     USER = "Admin"
     PASSWORD = "admin123"
 
     def test_login(self, page: Page):
+        '''This test case demonstrates the use of locators in Playwright.
+        It navigates to the specified URL, locates various elements on the page using both relative CSS 
+        and relative XPath locators, and performs actions such as filling in the username and password fields 
+        and clicking the login button.'''
         page.goto(self.url)
         
         #check if page if loaded by checking the title and other elements

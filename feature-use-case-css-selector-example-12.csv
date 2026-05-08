@@ -1,0 +1,13 @@
+﻿Feature / Use Case,CSS Selector Example,XPath Example,Notes
+By ID,#login,"//*[@id=""login""]",Both are straightforward.
+By Class,.btn-primary,"//*[@class=""btn-primary""]",CSS is shorter.
+By Tag,input,//input,Identical in concept.
+By Attribute,"input[type=""text""]","//input[@type=""text""]",Both support attribute filters.
+Contains Attribute,"a[href*=""login""]","//a[contains(@href,""login"")]",XPath uses contains().
+Starts With Attribute,"input[name^=""user""]","//input[starts-with(@name,""user"")]",XPath has starts-with().
+Ends With Attribute,"img[src$="".png""]","//img[substring(@src,string-length(@src)-3)="".png""]",CSS is simpler here.
+Nth Child,li:nth-child(2),//ul/li[2],Both can target positions.
+Text Matching,❌ Not supported directly,"//button[text()=""Submit""]",XPath is stronger for text.
+Partial Text,❌ Not supported directly,"//p[contains(text(),""Welcome"")]",XPath wins here.
+Parent/Ancestor,❌ Not supported,//span/ancestor::div,XPath can traverse upward.
+Sibling,h1 + p (next sibling),//h1/following-sibling::p[1],Both support sibling navigation.
