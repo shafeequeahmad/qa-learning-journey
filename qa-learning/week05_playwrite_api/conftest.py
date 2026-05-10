@@ -1,14 +1,16 @@
 # Video link: https://www.youtube.com/watch?v=MumoJxPVZzA&list=PLQKDzuA2cCjpXjzKvUOfvJaWGl9dBWOVo&index=6
 import pytest
 from playwright.sync_api import sync_playwright
+from .auth import AUTH
 
 @pytest.fixture(scope='class')
 def burl(request, playwright: sync_playwright):
 
 
+    """Provide URL fixture for burl."""
     params = {
     'baseurl': 'https://gorest.co.in',
-    'headers': {"Authorization": "Bearer bbd12c4743b4ded3539ddf251c19f80c5dd677df9b722b0d0e1e86a93ee1b42d"},
+    'headers': {"Authorization": AUTH},
     'user_id': []
     }
 

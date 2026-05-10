@@ -5,9 +5,11 @@ import pytest
 
 @pytest.mark.usefixtures("tables")
 class BaseTest():
+    """Base test class for Playwright or Selenium test suites."""
     pass
 
 class TestSortedTable(BaseTest):
+    """Test class for sorted table validation."""
 
     @pytest.mark.stables
     def test_sorted_table(self, page: Page):

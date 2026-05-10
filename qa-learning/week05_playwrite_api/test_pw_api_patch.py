@@ -5,13 +5,18 @@ import string
 
 @pytest.mark.usefixtures("burl")
 class BaseTest:
+
+    """Base test class for Playwright or Selenium test suites."""
+
     def random_email(self,domain="gmail.com"):
+        """Generate a random email address for test data."""
         prefix = ''.join(random.choices(string.ascii_lowercase + string.digits, k=10))
         return f"{prefix}@{domain}"
 
 class TestPlaywrightAPI(BaseTest):
 
     @pytest.mark.api
+    """Test class for Playwright API CRUD operations."""
     @pytest.mark.api_patch
     def test_playwright_patch_api(self, playwright: sync_playwright):
         """Test to update a user's information using the PATCH method."""

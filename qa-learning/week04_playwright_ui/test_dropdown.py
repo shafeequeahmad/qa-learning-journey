@@ -5,9 +5,11 @@ import pytest
 
 @pytest.mark.usefixtures("dropdown")
 class BaseTest():
+    """Base test class for Playwright or Selenium test suites."""
     pass
 
 class TestDropdown(BaseTest):
+    """Test class for dropdown interaction scenarios."""
 
     @pytest.mark.dropdown
     def test_dropdown(self, page: Page):

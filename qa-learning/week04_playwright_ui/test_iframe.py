@@ -4,9 +4,11 @@ import pytest
 
 @pytest.mark.usefixtures("iframe")
 class BaseTest():
+    """Base test class for Playwright or Selenium test suites."""
     pass
 
 class TestIframe(BaseTest):
+    """Test class for iframe interaction scenarios."""
 
     @pytest.mark.iframe
     def test_iframe(self, page: Page):

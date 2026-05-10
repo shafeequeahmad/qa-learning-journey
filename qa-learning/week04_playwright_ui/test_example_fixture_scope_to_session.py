@@ -4,6 +4,7 @@ import pytest
 
 @pytest.mark.session
 def test_has_title(page: Page, pwurl: str):
+    """Test case for has title."""
     page.goto(pwurl)
 
     # Expect a title "to contain" a substring.
@@ -11,6 +12,7 @@ def test_has_title(page: Page, pwurl: str):
 
 @pytest.mark.session
 def test_get_started_link(page: Page, pwurl: str):
+    """Test case for get started link."""
     page.goto(pwurl)
 
     # Click the get started link.

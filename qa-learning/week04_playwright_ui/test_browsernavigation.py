@@ -12,10 +12,12 @@ import pytest
 
 @pytest.mark.usefixtures("orangeHRM")
 class BaseTest():
+    """Base test class for Playwright or Selenium test suites."""
     pass
 
 @pytest.mark.browser
 class TestExample(BaseTest):
+    """Test class for example Playwright page flows."""
 
     def test_has_title(self, page: Page):
         '''This test case demonstrates the use of browser navigation methods in Playwright.

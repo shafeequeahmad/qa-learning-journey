@@ -7,6 +7,7 @@ import pytest
 
 @pytest.mark.usefixtures("orangeHRM")
 class BaseTest():
+    """Base test class for Playwright or Selenium test suites."""
     pass
 
 @pytest.mark.locator

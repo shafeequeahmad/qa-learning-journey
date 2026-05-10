@@ -3,9 +3,11 @@ import pytest
 
 @pytest.mark.usefixtures("practiceURL")
 class BaseTest:
+    """Base test class for Playwright or Selenium test suites."""
     pass
 
 class TestFillForm(BaseTest):
+    """Test class for form filling and submission scenarios."""
 
     @pytest.mark.form
     def test_fill_form(self, page: Page):

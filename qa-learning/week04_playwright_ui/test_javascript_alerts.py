@@ -34,6 +34,7 @@ def test_jsalerts(page: Page, jsalert_url):
         page.wait_for_timeout(3000)
 
 def alerts_handler(dialog):
+    """Handle JavaScript dialog events and accept or dismiss them based on the message."""
     if "I am a JS Alert" in dialog.message:
         dialog.accept()
     elif "I am a JS Confirm" in dialog.message:

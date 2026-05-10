@@ -7,14 +7,17 @@ import pytest
 
 @pytest.mark.usefixtures("orangeHRM")
 class BaseTest():
+    """Base test class for Playwright or Selenium test suites."""
     pass
 
 @pytest.mark.builtinlocators
 class TestExample(BaseTest):
+    """Test class for example Playwright page flows."""
     USER = "Admin"
     PASSWORD = "admin123"
 
     def test_login(self, page: Page):
+        """Test case for login."""
         page.goto(self.url)
 
         #check if page if loaded by checking the title and other elements

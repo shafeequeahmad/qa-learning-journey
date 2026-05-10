@@ -3,12 +3,15 @@ import pytest
 
 @pytest.mark.usefixtures("orangeHRM")
 class BaseTest:
+    """Base test class for Playwright or Selenium test suites."""
     pass
 
 class TestOrangeHRM(BaseTest):
+    """Test class for OrangeHRM login and dashboard verification."""
 
     @pytest.mark.orangehrm
     def test_login(self, page: Page):
+        """Test case for login."""
         page.goto(self.url)
 
         # Login to OrangeHRM
