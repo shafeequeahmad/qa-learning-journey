@@ -1,5 +1,6 @@
 __pycache__/
 .pytest_cache/
 output_files/
+report/
 auth.py
 fix_decorator_docstrings.py

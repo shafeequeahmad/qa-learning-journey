@@ -13,9 +13,9 @@ class BaseTest:
         return f"{prefix}@{domain}"
 
 class TestPlaywrightAPI(BaseTest):
+    """Test class for Playwright API CRUD operations."""
 
     @pytest.mark.api
-    """Test class for Playwright API CRUD operations."""
     @pytest.mark.api_post
     def test_playwright_post_api(self, playwright: sync_playwright):
         """Test case for playwright post api."""

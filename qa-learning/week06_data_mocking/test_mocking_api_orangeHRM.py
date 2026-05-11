@@ -24,7 +24,7 @@ def mockdata(page: Page, data):
 
         if isinstance(jsondata, dict):
             if 'data' in jsondata and isinstance(jsondata['data'], list):
-                # jsondata['data'].append(data)
+                # jsondata['data'].append(data) >> website under test does not allow to add
                 jsondata['data'][0]['pendingActionCount'] = 20
                 jsondata['data'][1]['pendingActionCount'] = 200
 

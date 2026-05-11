@@ -4,7 +4,7 @@ import pytest
 @pytest.mark.usefixtures("burl")
 class BaseTest:
     """Base test class for Playwright or Selenium test suites."""
-       pass
+    pass
 
 class TestPlaywrightAPI(BaseTest):
     """Test class for Playwright API CRUD operations."""
