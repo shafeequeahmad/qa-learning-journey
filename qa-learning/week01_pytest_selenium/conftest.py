@@ -11,10 +11,13 @@
 # in the same directory and subdirectories.
 
 import pytest
+import os
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.chrome.service import Service as ChromeService
+from selenium.webdriver.chrome.options import Options as ChromeOptions
+from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from webdriver_manager.firefox import GeckoDriverManager
 
 @pytest.fixture(scope='session')
@@ -26,7 +29,6 @@ def storage_config():
         'access_key': 'admin',
         'secret_key': 'password123'
     }
-
 
 
 @pytest.fixture(params=["chrome", "firefox"], scope="class")
@@ -44,14 +46,26 @@ def web_driver(request):
     Yields:
         WebDriver: A Selenium WebDriver instance for the selected browser.
 
-    After the test class finishes, the fixture quits the browser.
+    After the test class finishes, the browser is closed.
     """
+    is_ci = os.getenv('CI', 'false').lower() == 'true'
+
     if request.param == "chrome":
+        chrome_options = ChromeOptions()
+        if is_ci:
+            chrome_options.add_argument("--headless=new")
+            chrome_options.add_argument("--no-sandbox")
+            chrome_options.add_argument("--disable-dev-shm-usage")
+            chrome_options.add_argument("--disable-gpu")
+            chrome_options.add_argument("--disable-extensions")
         service = ChromeService(ChromeDriverManager().install())
-        driver = webdriver.Chrome(service=service)
+        driver = webdriver.Chrome(service=service, options=chrome_options)
     elif request.param == "firefox":
+        firefox_options = FirefoxOptions()
+        if is_ci:
+            firefox_options.add_argument("--headless")
         service = FirefoxService(GeckoDriverManager().install())
-        driver = webdriver.Firefox(service=service)
+        driver = webdriver.Firefox(service=service, options=firefox_options)
 
     request.cls.driver = driver
     request.cls.browser = request.param
