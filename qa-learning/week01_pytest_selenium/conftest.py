@@ -58,12 +58,14 @@ def web_driver(request):
             chrome_options.add_argument("--disable-dev-shm-usage")
             chrome_options.add_argument("--disable-gpu")
             chrome_options.add_argument("--disable-extensions")
+            chrome_options.add_argument("--disable-software-rasterizer")
         service = ChromeService(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=chrome_options)
     elif request.param == "firefox":
         firefox_options = FirefoxOptions()
         if is_ci:
             firefox_options.add_argument("--headless")
+            firefox_options.add_argument("--disable-gpu")
         service = FirefoxService(GeckoDriverManager().install())
         driver = webdriver.Firefox(service=service, options=firefox_options)
 
