@@ -1,0 +1,27 @@
+TC_Name,Priority,Label,Description,Visual_Checks_Required,Expected_Result
+Verify Navigation Menu,High,Smoke,Verify that the navigation menu is displayed and clickable.,Yes,Navigation menu is displayed and clickable.
+Verify Breadcrumbs,High,Smoke,Verify that the breadcrumbs are displayed and clickable.,Yes,Breadcrumbs are displayed and clickable.
+Verify Hyperlinks,High,Smoke,Verify that the hyperlinks are displayed and clickable.,Yes,Hyperlinks are displayed and clickable.
+Verify Username Field,Medium,Sanity,Verify that the username field is displayed and editable.,Yes,Username field is displayed and editable.
+Verify User Role Dropdown,Medium,Sanity,Verify that the user role dropdown is displayed and selectable.,Yes,User role dropdown is displayed and selectable.
+Verify Employee Name Field,Medium,Sanity,Verify that the employee name field is displayed and editable.,Yes,Employee name field is displayed and editable.
+Verify Status Dropdown,Medium,Sanity,Verify that the status dropdown is displayed and selectable.,Yes,Status dropdown is displayed and selectable.
+Verify Search Button,Medium,Sanity,Verify that the search button is displayed and clickable.,Yes,Search button is displayed and clickable.
+Verify Reset Button,Medium,Sanity,Verify that the reset button is displayed and clickable.,Yes,Reset button is displayed and clickable.
+Verify Add Button,Medium,Sanity,Verify that the add button is displayed and clickable.,Yes,Add button is displayed and clickable.
+Verify Table Data,High,Regression,Verify that the table data is displayed correctly.,Yes,Table data is displayed correctly.
+Verify Table Headers,High,Regression,Verify that the table headers are displayed correctly.,Yes,Table headers are displayed correctly.
+Verify Records Found Text,High,Regression,Verify that the records found text is displayed correctly.,Yes,Records found text is displayed correctly.
+Verify Actions Column,High,Regression,Verify that the actions column is displayed correctly.,Yes,Actions column is displayed correctly.
+Verify Mandatory Fields,Medium,Sanity,Verify that the mandatory fields are marked as required.,Yes,Mandatory fields are marked as required.
+Verify Format Checks,Medium,Sanity,Verify that the format checks are working correctly.,Yes,Format checks are working correctly.
+Verify Error Messages,Medium,Sanity,Verify that the error messages are displayed correctly.,Yes/Error messages are displayed correctly.
+Verify Success Messages,Medium,Sanity,Verify that the success messages are displayed correctly.,Yes,Success messages are displayed correctly.
+Verify Username Ascending Order,Low,Regression,Verify that the username column can be sorted in ascending order.,Yes,Username column can be sorted in ascending order.
+Verify Username Descending Order,Low,Regression,Verify that the username column can be sorted in descending order.,Yes,Username column can be sorted in descending order.
+Verify User Role Ascending Order,Low,Regression,Verify that the user role column can be sorted in ascending order.,Yes,User role column can be sorted in ascending order.
+Verify User Role Descending Order,Low,Regression,Verify that the user role column can be sorted in descending order.,Yes,User role column can be sorted in descending order.
+Verify Employee Name Ascending Order,Low,Regression,Verify that the employee name column can be sorted in ascending order.,Yes,Employee name column can be sorted in ascending order.
+Verify Employee Name Descending Order,Low,Regression,Verify that the employee name column can be sorted in descending order.,Yes,Employee name column can be sorted in descending order.
+Verify Status Ascending Order,Low,Regression,Verify that the status column can be sorted in ascending order.,Yes,Status column can be sorted in ascending order.
+Verify Status Descending Order,Low,Regression,Verify that the status column can be sorted in descending order.,Yes,Status column can be sorted in descending order.

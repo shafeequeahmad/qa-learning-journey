@@ -1,0 +1,17 @@
+TC_Name,Priority,Label,Description,Visual_Checks_Required,Expected_Result
+Login_Page_Load,High,Smoke,Verify that the login page loads correctly,False,Login page is displayed with username and password fields
+Username_Field_Validation,Medium,Sanity,Verify that the username field accepts valid input,True,Username field accepts valid input and displays no error
+Password_Field_Validation,Medium,Sanity,Verify that the password field accepts valid input,True,Password field accepts valid input and displays no error
+Login_Button_Functionality,High,Smoke,Verify that the login button submits the form correctly,False,Login button submits the form and redirects to the next page
+Forgot_Password_Link,Low,Regression,Verify that the forgot password link is displayed and functional,True,Forgot password link is displayed and redirects to the password recovery page
+Username_Field_Mandatory_Check,Medium,Sanity,Verify that the username field is mandatory,True,Username field displays an error when left blank
+Password_Field_Mandatory_Check,Medium,Sanity,Verify that the password field is mandatory,True,Password field displays an error when left blank
+Invalid_Credentials_Error,Medium,Sanity,Verify that an error is displayed for invalid credentials,True,Error message is displayed for invalid credentials
+Login_Page_Layout,Low,Regression,Verify that the login page layout is correct,True,Login page layout is correct and all elements are displayed correctly
+Social_Media_Links,Low,Regression,Verify that the social media links are displayed and functional,True,Social media links are displayed and redirect to the correct pages
+Copyright_Info,Low,Regression,Verify that the copyright information is displayed correctly,True,Copyright information is displayed correctly
+OrangeHRM_Link,Low,Regression,Verify that the OrangeHRM link is displayed and functional,True,OrangeHRM link is displayed and redirects to the correct page
+Username_Field_Format_Check,Medium,Sanity,Verify that the username field checks for valid format,True,Username field checks for valid format and displays an error for invalid input
+Password_Field_Format_Check,Medium,Sanity,Verify that the password field checks for valid format,True,Password field checks for valid format and displays an error for invalid input
+Login_Page_Security,High,Smoke,Verify that the login page is secure and uses HTTPS,False,Login page is secure and uses HTTPS
+Login_Page_Performance,High,Smoke,Verify that the login page loads quickly and is responsive,False,Login page loads quickly and is responsive

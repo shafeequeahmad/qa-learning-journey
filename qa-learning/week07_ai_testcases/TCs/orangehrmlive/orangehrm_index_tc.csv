@@ -1,0 +1,18 @@
+TC_Name,Priority,Label,Description,Visual_Checks_Required,Expected_Result
+Verify Navigation Menu,High,Smoke,Verify that the navigation menu is displayed and all options are visible.,Yes,Navigation menu is displayed with all options.
+Verify Breadcrumbs,Medium,Sanity,Verify that breadcrumbs are displayed and functional.,Yes,Breadcrumbs are displayed and functional.
+Verify Hyperlinks,Medium,Sanity,Verify that all hyperlinks are functional.,Yes,All hyperlinks are functional.
+Verify Text Boxes,Low,Regression,Verify that all text boxes are displayed and editable.,Yes,All text boxes are displayed and editable.
+Verify Date Pickers,Low,Regression,Verify that all date pickers are displayed and functional.,Yes,All date pickers are displayed and functional.
+Verify Dropdowns,Low,Regression,Verify that all dropdowns are displayed and functional.,Yes,All dropdowns are displayed and functional.
+Verify Tables,Medium,Sanity,Verify that all tables are displayed with correct data.,Yes,All tables are displayed with correct data.
+Verify Headers,Medium,Sanity,Verify that all headers are displayed correctly.,Yes,All headers are displayed correctly.
+Verify Grid Data,Medium,Sanity,Verify that all grid data is displayed correctly.,Yes,All grid data is displayed correctly.
+Verify Records Found Text,Low,Regression,Verify that the records found text is displayed correctly.,Yes,Records found text is displayed correctly.
+Verify Buttons,Medium,Sanity,Verify that all buttons are displayed and functional.,Yes,All buttons are displayed and functional.
+Verify Icons,Low,Regression,Verify that all icons are displayed and functional.,Yes,All icons are displayed and functional.
+Verify Search,Medium,Sanity,Verify that the search functionality is working correctly.,Yes,Search functionality is working correctly.
+Verify Mandatory Fields,High,Smoke,Verify that all mandatory fields are marked correctly.,Yes,All mandatory fields are marked correctly.
+Verify Format Checks,Medium,Sanity,Verify that all format checks are working correctly.,Yes,All format checks are working correctly.
+Verify Error Messages,Medium,Sanity,Verify that all error messages are displayed correctly.,Yes,All error messages are displayed correctly.
+Verify Success Messages,Medium,Sanity,Verify that all success messages are displayed correctly.,Yes,All success messages are displayed correctly.

@@ -1,0 +1,4 @@
+
+BASE_URL = "https://opensource-demo.orangehrmlive.com/web/index.php"
+USERNAME = "Admin"
+PASSWORD = "admin123"
